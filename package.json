@@ -4,9 +4,9 @@
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "prod": "NODE_ENV=production postcss ./src/input.css -o ./public/tailwind.css",
-    "start": "cross-env NODE_ENV=development node your-start-script.js",
-    "build": "cross-env NODE_ENV=production node your-build-script.js"
+    "prod": "NODE_ENV=production postcss ./src/input.css -o ./public/styles/tailwind.css",
+    "start": "cross-env NODE_ENV=development postcss public/assets/styles.css -o dist/styles.css --watch",
+    "build": "cross-env NODE_ENV=production postcss public/assets/styles.css -o dist/styles.css"
   },
   "keywords": [],
   "author": "",
