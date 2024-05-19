@@ -4,8 +4,9 @@
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "build": "postcss ./src/input.css -o ./public/tailwind.css --watch",
-    "prod": "NODE_ENV=production postcss ./src/input.css -o ./public/tailwind.css"
+    "prod": "NODE_ENV=production postcss ./src/input.css -o ./public/tailwind.css",
+    "start": "cross-env NODE_ENV=development node your-start-script.js",
+    "build": "cross-env NODE_ENV=production node your-build-script.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,7 @@
     "postcss-cli": "^11.0.0"
   },
   "dependencies": {
-    "tailwindcss": "^3.4.1",
-    "win-node-env": "^0.6.1"
+    "cross-env": "^7.0.3",
+    "tailwindcss": "^3.4.1"
   }
 }
