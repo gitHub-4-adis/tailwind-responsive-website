@@ -5,8 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "prod": "NODE_ENV=production postcss ./public/styles/input.css -o ./public/styles/tailwind.css",
-    "start": "cross-env NODE_ENV=development postcss public/assets/styles.css -o dist/styles.css --watch",
-    "build": "cross-env NODE_ENV=production postcss public/assets/styles.css -o dist/styles.css"
+    "start": "cross-env NODE_ENV=development postcss ./public/styles/tailwind.css -o ./public/styles/tailwind.css --watch",
+    "build": "cross-env NODE_ENV=production postcss ./public/styles/tailwind.css -o ./public/styles/tailwind.css"
   },
   "keywords": [],
   "author": "",
